@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Web Shop</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>Web Shop</h1>
-    <div class="cart-container">
-        <button class="cart-button">Cart <span class="cart-badge">0</span></button>
-    </div>
-
-    <div class="items-grid">
-    </div>
-
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Cart</h2>
-        <ul class="cart-items"></ul>
-        <p>Total: <span class="cart-total">$0.00</span></p>
-        <button class="buy-btn">Buy</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Shop</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="shape-blob"></div>
+            <div class="shape-blob one"></div>
+            <div class="shape-blob two"></div>
+        </div>
+        <div class="content">
+            <h1 class="title">Web Shop</h1>
+            <div class="cart-container">
+                <button class="cart-button btn">
+                    Cart
+                    <span>&nbsp</span>
+                    <span id="cart-badge" class="cart-badge"></span>
+                </button>
+                <select class="select-sort btn">
+                    <option>Select</option>
+                    <option>Sort price low to high</option>
+                    <option>Sort price high to low</option>
+                </select>
+            </div>
+            <div class="items-grid"></div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cart</h2>
+                    <ul class="cart-items"></ul>
+                    <p>
+                        Total:
+                        <span id="cart-total" class="cart-total"></span>
+                    </p>
+                    <div class="items-grid-modal"></div>
+                    <button class="btn buy-btn">Buy</button>
+                </div>
+            </div>
+            <div class="item-info-modal">
+                <div class="item-info-modal-content">
+                </div>
+            </div>
+            <div class="message-modal">
+                <div class="message-modal-content">
+                    <h2 id="purchase-message"></h2>
+                    <button class="close-btn btn-small">Close</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>

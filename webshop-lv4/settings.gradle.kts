@@ -1,0 +1,1 @@
+rootProject.name = "com.webshop.webshop-lv4"
