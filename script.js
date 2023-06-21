@@ -17,7 +17,7 @@ const itemModal = document.querySelector(".item-info-modal");
 const itemModalContent = document.querySelector(".item-info-modal-content");
 
 async function fetchData() {
-  const response = await fetch("http://localhost:8080/shop/items");
+  const response = await fetch("https://lv4webshop-production.up.railway.app/shop/items");
   const data = await response.json();
   items = await data.data;
 }
@@ -135,7 +135,7 @@ async function buyItems() {
     body: JSON.stringify(body),
   };
   const response = await fetch(
-    "http://localhost:8080/shop/purchase",
+    "https://lv4webshop-production.up.railway.app/shop/purchase",
     requestOptions
   );
   const data = await response.json();
