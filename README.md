@@ -1,3 +1,11 @@
+# Klijentska stranica je dostupna na
+https://example-web-shop-with-api.onrender.com/
+
+# Backend je dostupan na 
+https://lv4webshop-production.up.railway.app/
+
+i endpointi su /shop/items(GET) i /shop/purchase(PUT)
+
 # LV 4 - PHP
 
 U ovoj vježbi zadatak je nadodati dinamičke fukncionalnosti u web stranicu koristeći znanja JavaScripta, HTML-a iz prethodnih vježbi i povezati ih s PHP-om. U repozitoriju se nalaze datoteke `index.html` i `style.css` u kojima se nalazi osnovni kostur stranice za web trgovinu (iz prošle vježbe). U datoteci `script.js` nalazi se početna točka za JavaScript iz prethodne vježbe. Potrebno je koristiti sve do sada naučeno, kako biste ostvarili funkcionalnosti. Sve dokumente i foldere s lokalne strane postaviti na github u main branch. 
