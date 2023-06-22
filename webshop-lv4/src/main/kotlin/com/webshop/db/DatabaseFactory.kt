@@ -34,6 +34,7 @@ object DatabaseFactory {
         maximumPoolSize = 15
         isAutoCommit = false
         transactionIsolation = "TRANSACTION_REPEATABLE_READ"
+        maxLifetime = 0
         validate()
     })
 
